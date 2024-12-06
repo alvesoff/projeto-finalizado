@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    position: relative;
+    padding: 0 50px;
+}
+
+header > nav > img {
+    height: 60px;
+}
+
+.btn-login {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400;  
+    font-size: 16px;
+}
+
+.btn-usuario {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: not-allowed; /* Muda o cursor para indicar que está desabilitado */
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400; 
+    font-size: 16px;
+    background-color: white; /* Mantém a cor de fundo original */
+    opacity: 1; /* Mantém a opacidade original */
+}
+
+.lista-cabecalho {
+    list-style: none;
+    display: flex;
+    gap: 15%;
+}
+
+.itens-cabecalho > a {
+    text-decoration: none;
+    color: white;
+    transition: all 2s;
+    font-family: "Poppins", sans-serif;;
+}
+
+.itens-cabecalho > a:hover {
+    text-decoration: underline;
+}
+
+.btn-cabecalho {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.solucao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-family: "Nunito", sans-serif;
+}
+
+.itens-solucao > h4 {
+    font-size: 24px;
+}
+
+.titulo-solucao {
+    text-align: center;
+    font-size: 50px;
+}
+
+.itens-solucao {
+    display: grid;
+    grid-template-areas:
+    'titulo titulo' 
+    'div1 div2'
+    'div3 div4';
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-solucao > h4 {
+    grid-area: titulo;
+}
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+}
+.div3 {
+    grid-area: div3;
+}
+.div4 {
+    grid-area: div4;
+}
+
+.item-solucao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 527px;
+    gap: 10px;
+}
+
+.como-funciona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 5%;
+}
+
+.como-funciona > h4 {
+    font-size: 34px;
+}
+
+.itens-como-funciona {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itens-como-funciona > p {
+    font-size: 20px;
+}
+
+.separacao-como-funciona {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.separacao-como-funciona > p {
+    max-width: 382px;
+    line-height: 150%;
+    font-size: 25px;
+}
+
+.orcamento {
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.orcamento > h2 {
+    margin: auto;
+    font-size: 40px;
+}
+
+.orcamento > p {
+    max-width: 599px;
+    font-size: 30px;
+}
+
+.orcamento > p > a {
+    text-decoration: none;
+    color: red;
+    transition: text-decoration 0.2s ease;
+}
+
+.orcamento > p > a:hover {
+    text-decoration: underline;
+}
+
+.orcamento > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orcamento > ul > li > p {
+    transition: color 1s;
+}
+
+.orcamento > ul > li > p:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+footer > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+}
+
+footer > ul > li > p {
+    font-size: 25px;
+}
+
+.item-icone-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.fa-facebook, .fa-square-instagram, .fa-linkedin {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+footer > ul > li > i:hover {
+    color: #007bff;
+}
+
+
+/* Overlay do Popup */
+.popup-overlay {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do Popup */
+.popup-content {
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    background-color: #1C1C1C; /* Fundo escuro */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    cursor: grab; /* Indica que pode ser arrastado */
+    z-index: 1100;
+}
+
+/* Estilo do Título */
+.titulo-login {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* Estilo do Parágrafo */
+.paragrafo-login {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+}
+
+.paragrafo-cadastro {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #CCCCCC;
+}
+
+/* Estilo do Formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo dos Inputs */
+.input-login {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do Botão de Login Dentro do Popup */
+.btn-login-popup {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3176F5;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login-popup:hover {
+    background-color: #1D5DC8;
+}
+
+/* Botão de Fechar */
+.btn-close-popup {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F53D3D;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close-popup:hover {
+    background-color: #C82C2C;
+}

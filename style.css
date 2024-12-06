@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    position: relative;
+}
+
+nav > img {
+    height: 60px;
+}
+
+.logo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.lista-cabecalho {
+    list-style: none;
+    display: flex;
+    gap: 15%;
+}
+
+.itens-cabecalho > a {
+    text-decoration: none;
+    color: white;
+    transition: all 2s;
+    font-family: "Poppins", sans-serif;;
+}
+
+.itens-cabecalho > a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400; /* Bold */ 
+    font-size: 16px;
+}
+
+.btn-usuario {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: not-allowed; /* Muda o cursor para indicar que está desabilitado */
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400; /* Bold */ 
+    font-size: 16px;
+    background-color: white; /* Mantém a cor de fundo original */
+    opacity: 1; /* Mantém a opacidade original */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.container-principal > h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container-principal > p {
+    max-width: 861px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+.btn-relatar-problema {
+    display: inline-block;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.5rem; /* Alinha o texto verticalmente */
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; /* Bold */
+    Font-size: 16px;
+}
+
+.btn-relatar-problema:hover {
+    background-color: #58a9ff;
+}
+
+
+.container-principal > button {
+    border-color: rgba(49, 118, 245, 0.596);
+    color: #fff;
+    box-shadow: 0 0 40px 40px #007bff inset, 0 0 0 0 rgba(49, 118, 245, 0.596);;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .container-principal > button:hover {
+    box-shadow: 0 0 10px 0 #007bff inset, 0 0 10px 4px rgba(49, 118, 245, 0.596);;
+    color: black;
+  }
+  
+
+.sobre {
+    display: grid;
+    grid-template-areas: 
+    'h2 h2 h2 h2'
+    'h1 h1 h1 h1'
+    'img img texto texto'
+    'img img texto texto';
+    justify-content: center;
+    gap: 20px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 80px;
+
+}
+
+.subtitulo-sobre {
+    grid-area: h2;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.titulo-sobre {
+    grid-area: h1;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 55px;
+}
+
+.img-sobre {
+    grid-area: img;
+}
+
+.container-texto-sobre {
+    grid-area: texto; 
+}
+
+.texto-sobre {
+    max-width: 610px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #E2E2E2;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.btn-sobre {
+    font-family: "Quicksand", sans-serif;
+    margin-top: 20%;
+    width: 346px;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;    
+}
+
+.btn-sobre > a {
+    text-decoration: none;
+    color: black;
+}
+
+.dois {
+    width: 245px;
+    background-color: black;
+    color: #E2E2E2;
+    border: 1px solid;
+    font-size: 16px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    transition: background-color 1s;
+}
+
+.dois:hover {
+    background-color: rgba(49, 118, 245, 0.596);
+}
+
+.dois > a {
+    text-decoration: none;
+    color: #E2E2E2;
+}
+
+.dois > i {
+    width: 24px;
+    height: 24px;
+}
+
+.solucao {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 130px;
+}
+
+.texto-solucao {
+    max-width: 662px;
+    margin: auto;
+}
+
+.subtitulo-solucao {
+    font-size: 24px;
+}
+
+.titulo-solucao {
+    font-size: 55px;
+    margin-top: 30px;
+}
+
+.paragrafo-solucao {
+    font-family: "Quicksand", sans-serif;
+    color: #E2E2E2;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.item-solucao {
+    width: 242px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 38px 38px 0;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.itens-solucao{ 
+    margin-top: 70px;
+}
+
+.divisoria-solucao {
+    display: flex;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.titulo-projetos {
+    font-family: "Nunito", sans-serif;
+    font-size: 55px;
+}
+
+.paragrafo-projetos {
+    font-size: 19px;
+    line-height: 34px;
+    color: #E2E2E2;
+    text-align: center;
+}
+
+.itens-projetos {
+    display: flex;
+    gap: 5%;
+    margin-top: 30px;
+}
+
+.item-projetos > p {
+    font-size: 24px;
+}
+
+.btn-projetos {
+    width: 226px;
+    height: 48px;
+    border: 1px solid;
+    border-radius: 24px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.btn-projetos:hover {
+    background-color: rgba(49, 118, 245, 0.596);
+}
+
+.btn-projetos > a {
+    text-decoration: none;
+    color: white;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 70px;
+}
+
+.depoimentos > h3 {
+    font-size: 24px;
+    color: #E2E2E2;
+    opacity: 90%;
+}
+
+.depoimentos > h2 {
+    font-size: 50px;
+}
+
+.itens-depoimentos {
+    display: flex;
+    gap: 30px;
+}
+
+.item-depoimentos {
+    width: 380px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #0B0F15;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.308);
+}
+
+.pessoa {
+    display: flex;
+    gap: 15px;
+}
+
+.pessoa > h4 {
+    padding-top: 10px;
+}
+
+.item-depoimentos > h4 {
+    font-size: 20px;
+}
+
+.texto-depoimentos {
+    font-size: 18px;
+    padding-top: 15px;
+    line-height: 28px;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400; /* Regular */ 
+    font-size: 16px;
+}
+
+.parceria {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.container-texto-parceria {
+    padding-top: 30px;
+}
+
+.titulo-parceria {
+    max-width: 491px;
+    font-size: 50px;
+    font-family: "Nunito", sans-serif;
+}
+
+.paragrafo-parceria {
+    max-width: 593px;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 33px;
+}
+
+.btn-parceria {
+    width: 257px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-top: 33px;
+    cursor: pointer;
+}
+
+.btn-parceria > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; /* Bold */ 
+    font-size: 16px;
+}
+
+.img-1-parceria {
+    position: relative;
+    left: 1%;
+    top: 40px;
+}
+
+footer {
+    height: 448px;
+    margin-top: 100px;
+    background-color: #383638;
+    font-family: "Quicksand", sans-serif;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lista-rodape {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.itens-rodape > p {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.itens-rodape > p:hover {
+    color: #007bff;
+}
+
+.lista-sociais-rodape {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itens-sociais-rodape > p {
+    border-top: 1px solid;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.itens-sociais-rodape > a {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.itens-sociais-rodape > a:hover {
+    color: #007bff;
+}
+
+
+/** teste /**/
+
+/* Overlay do Popup */
+.popup-overlay {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do Popup */
+.popup-content {
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    background-color: #1C1C1C; /* Fundo escuro */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    cursor: grab; /* Indica que pode ser arrastado */
+    z-index: 1100;
+}
+
+/* Estilo do Título */
+.titulo-login {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* Estilo do Parágrafo */
+.paragrafo-login {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+}
+
+.paragrafo-cadastro {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #CCCCCC;
+}
+
+/* Estilo do Formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo dos Inputs */
+.input-login {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do Botão de Login Dentro do Popup */
+.btn-login-popup {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3176F5;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login-popup:hover {
+    background-color: #1D5DC8;
+}
+
+/* Botão de Fechar */
+.btn-close-popup {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F53D3D;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close-popup:hover {
+    background-color: #C82C2C;
+}
+
+.carousel-container {
+    padding: 0;
+    position: relative; /* Para posicionar as barras */
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-track {
+    margin-top: 80px;
+    display: flex;
+    gap: 90px; /* Espaçamento entre as logos */
+    animation: scroll 250s linear infinite; /* Animação mais lenta */
+  }
+  
+  
+  /* Barras brancas laterais */
+  .carousel-container::before,
+  .carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 110px; /* Largura das barras brancas */
+    height: 100%;
+    background-color: black; /* Cor branca */
+    z-index: 2; /* Garante que fique acima do carrossel */
+  }
+  
+  .carousel-container::before {
+    left: 0px; /* Barra do lado esquerdo */
+  }
+  
+  .carousel-container::after {
+    right: 0px; /* Barra do lado direito */
+  }
+  
+  /* Animação para rolagem contínua */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 50px)); /* Considera o espaçamento entre logos */
+}
+}
+
+.Cittamobi {
+    width: auto; /* Defina a largura desejada */
+    height: 120px; /* Mantém a proporção da imagem */
+}
+
+.Uber {
+    width: auto; /* Defina a largura desejada */
+    height: 120px; /* Mantém a proporção da imagem */
+}
+
+.ritmo-logo {
+    width: auto; /* Defina a largura desejada */
+    height: 100px; /* Mantém a proporção da imagem */
+}
+
+.EcoUrbano {
+    width: 400px; /* Defina a largura desejada */
+    height: 85px; /* Mantém a proporção da imagem */
+}
+
+.tax {
+    width: auto; /* Defina a largura desejada */
+    height: 88px; /* Mantém a proporção da imagem */
+}

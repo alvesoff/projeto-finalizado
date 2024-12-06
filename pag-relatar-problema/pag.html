@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script type="module" src="script.js" defer></script>
+    <title>Relatar Problema</title>
+</head>
+<body>
+    <header>
+        <img src="img/Captura_de_tela_2024-12-02_140851-removebg-preview 1.png" alt="">
+        <p>Ribeirão Preto <br> <h4>Mobilize</h4></p>
+    </header>
+
+    <div class="login">
+        <div class="container-login">
+            <button class="btn-login" id="open-login-popup">Entre ou Cadastre-se</button>
+            <p>
+                <strong>Política de Privacidade · Termos de Uso</strong> <br> Mobilize RP ©2024
+            </p>
+        </div>
+        <a href="/index.html" class="btn-voltar">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            Voltar
+        </a>
+        
+    </div>
+
+    <main>
+        <div class="new-post">
+            <div class="info-user">
+                <div class="img-user"></div>
+                <strong id="user-name">Anônimo</strong>
+            </div>            
+
+            <form id="formPost" class="form-post">
+                <textarea id="textarea" name="textarea" placeholder="Vamos mudar o mundo"></textarea>
+
+                <div class="icons-and-button">
+                    <div class="icons">
+                      <button class="btn-file-form">
+                        <i class="fa-regular fa-image"></i>
+                      </button> 
+                    </div>
+                    <button type="submit" class="btn-submit-form">
+                        Publicar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <ul id="posts" class="posts">
+            <!-- Os posts serão adicionados dinamicamente aqui -->
+        </ul>
+    </main>
+
+    <!-- Popup de Login -->
+    <div class="popup-overlay" id="login-popup">
+        <div class="popup-content" id="popup-content">
+            <h1 class="titulo-login">Bem-vindo!</h1>
+            <p class="paragrafo-login">Faça login para continuar.</p>
+            <form action="#" method="POST" class="form-login">
+                <label for="email" class="label-login">E-mail</label>
+                <input type="email" id="email" name="email" class="input-login" placeholder="Digite seu e-mail" required>
+    
+                <label for="senha" class="label-login">Senha</label>
+                <input type="password" id="senha" name="senha" class="input-login" placeholder="Digite sua senha" required>
+                <a href="/pag-cadastro/index.html" class="paragrafo-cadastro">Faça seu Cadastro</a>
+    
+                <button type="submit" class="btn-login-popup">Entrar</button>
+            </form>
+            <button class="btn-close-popup" id="close-login-popup">Fechar</button>
+        </div>
+    </div>
+
+    <script src="/auth/login.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
